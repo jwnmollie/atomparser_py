@@ -14,7 +14,7 @@ def get_last_entries(entries, count):
     return entries[-count:]
 
 def main():
-    url = "https://www.paypal-status.com/feed/atom"
+    url = "{atom url}"
 
     atom_feed_content = fetch_atom_feed(url)
     entries = parse_atom_feed(atom_feed_content)
